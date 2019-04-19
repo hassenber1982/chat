@@ -39,3 +39,245 @@ Stack trace: #0 /var/www/html/Chat/Controllers/Home.php(26): Chat\Models\User->l
 #4 /var/www/html/public/index.php(35): Core\Router->dispatch('home/login')
 #5 {main}
 Thrown in '/var/www/html/Chat/Models/User.php' on line 143
+[19-Apr-2019 13:00:59 UTC] Uncaught exception: 'Error' with message 'Call to a member function fetchAll() on boolean'
+Stack trace: #0 /var/www/html/Chat/Controllers/Chat.php(33): Chat\Models\User->list()
+#1 [internal function]: Chat\Controllers\Chat->listAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#4 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#5 {main}
+Thrown in '/var/www/html/Chat/Models/User.php' on line 153
+[19-Apr-2019 13:01:03 UTC] Uncaught exception: 'Error' with message 'Call to a member function fetchAll() on boolean'
+Stack trace: #0 /var/www/html/Chat/Controllers/Chat.php(33): Chat\Models\User->list()
+#1 [internal function]: Chat\Controllers\Chat->listAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#4 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#5 {main}
+Thrown in '/var/www/html/Chat/Models/User.php' on line 153
+[19-Apr-2019 13:01:14 UTC] Uncaught exception: 'Error' with message 'Call to a member function fetchAll() on boolean'
+Stack trace: #0 /var/www/html/Chat/Controllers/Chat.php(33): Chat\Models\User->list()
+#1 [internal function]: Chat\Controllers\Chat->listAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#4 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#5 {main}
+Thrown in '/var/www/html/Chat/Models/User.php' on line 153
+[19-Apr-2019 13:03:59 UTC] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 /var/www/html/Chat/Controllers/Chat.php(33): Chat\Models\User->list()
+#1 [internal function]: Chat\Controllers\Chat->listAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#4 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#5 {main}
+Thrown in '/var/www/html/Chat/Models/User.php' on line 153
+[19-Apr-2019 13:05:13 UTC] Uncaught exception: 'TypeError' with message 'Return value of Chat\Models\User::list() must be of the type array, boolean returned'
+Stack trace: #0 /var/www/html/Chat/Controllers/Chat.php(33): Chat\Models\User->list()
+#1 [internal function]: Chat\Controllers\Chat->listAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#4 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#5 {main}
+Thrown in '/var/www/html/Chat/Models/User.php' on line 155
+[19-Apr-2019 13:05:16 UTC] Uncaught exception: 'TypeError' with message 'Return value of Chat\Models\User::list() must be of the type array, boolean returned'
+Stack trace: #0 /var/www/html/Chat/Controllers/Chat.php(33): Chat\Models\User->list()
+#1 [internal function]: Chat\Controllers\Chat->listAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#4 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#5 {main}
+Thrown in '/var/www/html/Chat/Models/User.php' on line 155
+[19-Apr-2019 13:05:32 UTC] Uncaught exception: 'ErrorException' with message 'Invalid argument supplied for foreach()'
+Stack trace: #0 /var/www/html/Chat/Views/Chat/list.php(2): Core\Error::errorHandler(2, 'Invalid argumen...', '/var/www/html/C...', 2, Array)
+#1 /var/www/html/Core/View.php(28): require('/var/www/html/C...')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Core\View::render('Chat/list.php', Array)
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Views/Chat/list.php' on line 2
+[19-Apr-2019 13:06:34 UTC] Uncaught exception: 'TypeError' with message 'Return value of Chat\Models\User::list() must be of the type array, boolean returned'
+Stack trace: #0 /var/www/html/Chat/Controllers/Chat.php(33): Chat\Models\User->list()
+#1 [internal function]: Chat\Controllers\Chat->listAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#4 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#5 {main}
+Thrown in '/var/www/html/Chat/Models/User.php' on line 155
+[19-Apr-2019 13:06:36 UTC] Uncaught exception: 'TypeError' with message 'Return value of Chat\Models\User::list() must be of the type array, boolean returned'
+Stack trace: #0 /var/www/html/Chat/Controllers/Chat.php(33): Chat\Models\User->list()
+#1 [internal function]: Chat\Controllers\Chat->listAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#4 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#5 {main}
+Thrown in '/var/www/html/Chat/Models/User.php' on line 155
+[19-Apr-2019 13:07:22 UTC] Uncaught exception: 'TypeError' with message 'Return value of Chat\Models\User::list() must be of the type array, boolean returned'
+Stack trace: #0 /var/www/html/Chat/Controllers/Chat.php(33): Chat\Models\User->list()
+#1 [internal function]: Chat\Controllers\Chat->listAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#4 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#5 {main}
+Thrown in '/var/www/html/Chat/Models/User.php' on line 156
+[19-Apr-2019 13:09:21 UTC] Uncaught exception: 'ErrorException' with message 'PDOStatement::execute() expects parameter 1 to be array, string given'
+Stack trace: #0 [internal function]: Core\Error::errorHandler(2, 'PDOStatement::e...', '/var/www/html/C...', 153, Array)
+#1 /var/www/html/Chat/Models/User.php(153): PDOStatement->execute('4')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Chat\Models\User->list()
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Models/User.php' on line 153
+[19-Apr-2019 13:09:23 UTC] Uncaught exception: 'ErrorException' with message 'PDOStatement::execute() expects parameter 1 to be array, string given'
+Stack trace: #0 [internal function]: Core\Error::errorHandler(2, 'PDOStatement::e...', '/var/www/html/C...', 153, Array)
+#1 /var/www/html/Chat/Models/User.php(153): PDOStatement->execute('4')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Chat\Models\User->list()
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Models/User.php' on line 153
+[19-Apr-2019 13:09:45 UTC] Uncaught exception: 'ErrorException' with message 'Invalid argument supplied for foreach()'
+Stack trace: #0 /var/www/html/Chat/Views/Chat/list.php(2): Core\Error::errorHandler(2, 'Invalid argumen...', '/var/www/html/C...', 2, Array)
+#1 /var/www/html/Core/View.php(28): require('/var/www/html/C...')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Core\View::render('Chat/list.php', Array)
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Views/Chat/list.php' on line 2
+[19-Apr-2019 13:10:12 UTC] Uncaught exception: 'ErrorException' with message 'Invalid argument supplied for foreach()'
+Stack trace: #0 /var/www/html/Chat/Views/Chat/list.php(2): Core\Error::errorHandler(2, 'Invalid argumen...', '/var/www/html/C...', 2, Array)
+#1 /var/www/html/Core/View.php(28): require('/var/www/html/C...')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Core\View::render('Chat/list.php', Array)
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Views/Chat/list.php' on line 2
+[19-Apr-2019 13:13:24 UTC] Uncaught exception: 'ErrorException' with message 'Invalid argument supplied for foreach()'
+Stack trace: #0 /var/www/html/Chat/Views/Chat/list.php(2): Core\Error::errorHandler(2, 'Invalid argumen...', '/var/www/html/C...', 2, Array)
+#1 /var/www/html/Core/View.php(28): require('/var/www/html/C...')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Core\View::render('Chat/list.php', Array)
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Views/Chat/list.php' on line 2
+[19-Apr-2019 13:14:10 UTC] Uncaught exception: 'ErrorException' with message 'Invalid argument supplied for foreach()'
+Stack trace: #0 /var/www/html/Chat/Views/Chat/list.php(2): Core\Error::errorHandler(2, 'Invalid argumen...', '/var/www/html/C...', 2, Array)
+#1 /var/www/html/Core/View.php(28): require('/var/www/html/C...')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Core\View::render('Chat/list.php', Array)
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Views/Chat/list.php' on line 2
+[19-Apr-2019 13:14:11 UTC] Uncaught exception: 'ErrorException' with message 'Invalid argument supplied for foreach()'
+Stack trace: #0 /var/www/html/Chat/Views/Chat/list.php(2): Core\Error::errorHandler(2, 'Invalid argumen...', '/var/www/html/C...', 2, Array)
+#1 /var/www/html/Core/View.php(28): require('/var/www/html/C...')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Core\View::render('Chat/list.php', Array)
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Views/Chat/list.php' on line 2
+[19-Apr-2019 13:14:12 UTC] Uncaught exception: 'ErrorException' with message 'Invalid argument supplied for foreach()'
+Stack trace: #0 /var/www/html/Chat/Views/Chat/list.php(2): Core\Error::errorHandler(2, 'Invalid argumen...', '/var/www/html/C...', 2, Array)
+#1 /var/www/html/Core/View.php(28): require('/var/www/html/C...')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Core\View::render('Chat/list.php', Array)
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Views/Chat/list.php' on line 2
+[19-Apr-2019 13:14:12 UTC] Uncaught exception: 'ErrorException' with message 'Invalid argument supplied for foreach()'
+Stack trace: #0 /var/www/html/Chat/Views/Chat/list.php(2): Core\Error::errorHandler(2, 'Invalid argumen...', '/var/www/html/C...', 2, Array)
+#1 /var/www/html/Core/View.php(28): require('/var/www/html/C...')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Core\View::render('Chat/list.php', Array)
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Views/Chat/list.php' on line 2
+[19-Apr-2019 13:14:47 UTC] Uncaught exception: 'ErrorException' with message 'Invalid argument supplied for foreach()'
+Stack trace: #0 /var/www/html/Chat/Views/Chat/list.php(2): Core\Error::errorHandler(2, 'Invalid argumen...', '/var/www/html/C...', 2, Array)
+#1 /var/www/html/Core/View.php(28): require('/var/www/html/C...')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Core\View::render('Chat/list.php', Array)
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Views/Chat/list.php' on line 2
+[19-Apr-2019 13:14:50 UTC] Uncaught exception: 'ErrorException' with message 'Invalid argument supplied for foreach()'
+Stack trace: #0 /var/www/html/Chat/Views/Chat/list.php(2): Core\Error::errorHandler(2, 'Invalid argumen...', '/var/www/html/C...', 2, Array)
+#1 /var/www/html/Core/View.php(28): require('/var/www/html/C...')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Core\View::render('Chat/list.php', Array)
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Views/Chat/list.php' on line 2
+[19-Apr-2019 13:15:07 UTC] Uncaught exception: 'ErrorException' with message 'Illegal string offset 'user''
+Stack trace: #0 /var/www/html/Chat/Views/Chat/list.php(10): Core\Error::errorHandler(2, 'Illegal string ...', '/var/www/html/C...', 10, Array)
+#1 /var/www/html/Core/View.php(28): require('/var/www/html/C...')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Core\View::render('Chat/list.php', Array)
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Views/Chat/list.php' on line 10
+[19-Apr-2019 13:16:34 UTC] Uncaught exception: 'ErrorException' with message 'Illegal string offset 'user''
+Stack trace: #0 /var/www/html/Chat/Views/Chat/list.php(10): Core\Error::errorHandler(2, 'Illegal string ...', '/var/www/html/C...', 10, Array)
+#1 /var/www/html/Core/View.php(28): require('/var/www/html/C...')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Core\View::render('Chat/list.php', Array)
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Views/Chat/list.php' on line 10
+[19-Apr-2019 13:18:48 UTC] Uncaught exception: 'ErrorException' with message 'Illegal string offset 'user''
+Stack trace: #0 /var/www/html/Chat/Views/Chat/list.php(10): Core\Error::errorHandler(2, 'Illegal string ...', '/var/www/html/C...', 10, Array)
+#1 /var/www/html/Core/View.php(28): require('/var/www/html/C...')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Core\View::render('Chat/list.php', Array)
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Views/Chat/list.php' on line 10
+[19-Apr-2019 13:19:22 UTC] Uncaught exception: 'ErrorException' with message 'Illegal string offset 'user''
+Stack trace: #0 /var/www/html/Chat/Views/Chat/list.php(10): Core\Error::errorHandler(2, 'Illegal string ...', '/var/www/html/C...', 10, Array)
+#1 /var/www/html/Core/View.php(28): require('/var/www/html/C...')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Core\View::render('Chat/list.php', Array)
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Views/Chat/list.php' on line 10
+[19-Apr-2019 13:20:27 UTC] Uncaught exception: 'ErrorException' with message 'Illegal string offset 'user''
+Stack trace: #0 /var/www/html/Chat/Views/Chat/list.php(10): Core\Error::errorHandler(2, 'Illegal string ...', '/var/www/html/C...', 10, Array)
+#1 /var/www/html/Core/View.php(28): require('/var/www/html/C...')
+#2 /var/www/html/Chat/Controllers/Chat.php(33): Core\View::render('Chat/list.php', Array)
+#3 [internal function]: Chat\Controllers\Chat->listAction()
+#4 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#5 /var/www/html/Core/Router.php(121): Core\Controller->__call('list', Array)
+#6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
+#7 {main}
+Thrown in '/var/www/html/Chat/Views/Chat/list.php' on line 10

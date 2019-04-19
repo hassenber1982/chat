@@ -145,6 +145,20 @@ class User extends \Core\Model
 
     }
 
+    public function list()
+    {
+        $req = static::getInstance()
+            ->prepare("select * 
+                from user 
+                where id != ".$_SESSION['id']."
+                ");
+        $req->execute();
+
+        return $req;
+
+    }
+
+
 
 
 

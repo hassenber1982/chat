@@ -3,6 +3,8 @@
 namespace Chat\Controllers;
 
 use \Core\View;
+use \Chat\Models\User;
+
 
 /**
  * chat controller
@@ -23,7 +25,13 @@ class Chat extends \Core\Controller
 
     public function listAction() : void
     {
+        $user = new User();
 
-        View::render('Chat/list.php');
+
+        View::render(
+            'Chat/list.php',  [
+                'result' => $user->list()
+            ]
+        );
     }
 }
