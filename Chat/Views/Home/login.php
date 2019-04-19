@@ -26,7 +26,7 @@
                 function(){
                     window.location = "/chat/index"
                 },
-                3000);
+                2000);
         </script>
     </body>
 </html>
