@@ -281,3 +281,23 @@ Stack trace: #0 /var/www/html/Chat/Views/Chat/list.php(10): Core\Error::errorHan
 #6 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/list')
 #7 {main}
 Thrown in '/var/www/html/Chat/Views/Chat/list.php' on line 10
+[19-Apr-2019 14:22:15 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /var/www/html/public/index.php(35): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/var/www/html/Core/Router.php' on line 130
+[19-Apr-2019 14:22:17 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /var/www/html/public/index.php(35): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/var/www/html/Core/Router.php' on line 130
+[19-Apr-2019 14:39:17 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /var/www/html/public/index.php(35): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/var/www/html/Core/Router.php' on line 130
+[19-Apr-2019 15:03:02 UTC] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function Core\Controller::__construct(), 0 passed in /var/www/html/Chat/Controllers/Chat.php on line 51 and exactly 1 expected'
+Stack trace: #0 /var/www/html/Chat/Controllers/Chat.php(51): Core\Controller->__construct()
+#1 [internal function]: Chat\Controllers\Chat->chatAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(121): Core\Controller->__call('chat', Array)
+#4 /var/www/html/public/index.php(35): Core\Router->dispatch('chat/chat')
+#5 {main}
+Thrown in '/var/www/html/Core/Controller.php' on line 26

@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 function loadUser(){
     $.ajax({
-        url: "list",
+        url: "/chat/list",
 
         beforeSend: function( xhr ) {
             $('#userlist').html('loading');
@@ -22,6 +22,21 @@ function loadUser(){
             $('.contacts li').click(function(){
                 $('.contacts > li').removeClass('active');
                 $(this).addClass('active');
+                $('.msg_head .bd-highlight .user_info span').html($('li.active div div.user_info span').html());
+
+                $.ajax({
+                    url: "/chat/chat",
+                    data: {
+                        'receveur': $(this).attr('about')
+                    },
+                    type : 'POST',
+                    beforeSend: function( xhr ) {
+                        $('.msg_card_body').html('loading');
+                    }
+                }).done(function(datar) {
+                    $('.msg_card_body').html(datar);
+                });
+
             });
         });
 

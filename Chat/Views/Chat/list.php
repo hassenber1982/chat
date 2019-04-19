@@ -1,6 +1,6 @@
 <ui class="contacts">
     <?php foreach ($result as $value)  { ?>
-        <li>
+        <li about="<?php echo $value['id']; ?>">
             <div class="d-flex bd-highlight">
                 <div class="img_cont">
                     <i class="fas fa-user"></i>

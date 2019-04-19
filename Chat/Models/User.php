@@ -129,6 +129,11 @@ class User extends \Core\Model
         return $req->rowCount();
     }
 
+    /**
+     * @param $user
+     * @param $psd
+     * @return int
+     */
     public function login($user, $psd) : int
     {
         $req = static::getInstance()
@@ -145,6 +150,9 @@ class User extends \Core\Model
 
     }
 
+    /**
+     * @return mixed
+     */
     public function list()
     {
         $req = static::getInstance()

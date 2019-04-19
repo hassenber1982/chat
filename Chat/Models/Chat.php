@@ -36,39 +36,39 @@ class Chat extends \Core\Model
     }
 
     /**
-     * @var User
+     * @var int
      * identifiant de user envoyeur
      *
      */
     private $envoyeur;
 
     /**
-     * @return \Chat\Models\User
+     * @return int
      */
-    public function getEnvoyeur() : User
+    public function getEnvoyeur() : int
     {
         return $this->envoyeur;
     }
 
     /**
-     * @param \Chat\Models\User $envoyeur
+     * @param int $envoyeur
      */
-    public function setEnvoyeur(User $envoyeur)
+    public function setEnvoyeur($envoyeur)
     {
         $this->envoyeur = $envoyeur;
     }
 
     /**
-     * @var User
+     * @var int
      * identifiant de user receveur
      *
      */
     private $receveur;
 
     /**
-     * @return \Chat\Models\User
+     * @return int
      */
-    public function getReceveur() : User
+    public function getReceveur() : int
     {
         return $this->receveur;
     }
@@ -126,5 +126,38 @@ class Chat extends \Core\Model
     {
         $this->message = $message;
     }
+
+
+    public function push()
+    {
+        $req = static::getInstance()->prepare("INSERT INTO chat (envoyeur, receveur, message) VALUES (?, ?, ?)");
+        return $req->execute(
+            array($_SESSION['id'], $this->getReceveur() , $this->getMessage())
+        );
+    }
+
+    public function list($receveur)
+    {
+        $req = static::getInstance()
+            ->prepare("select * 
+                from chat 
+                where 
+                (
+                receveur != ".$_SESSION['id']." and
+                envoyeur != ".$receveur." 
+                )
+                or 
+                (
+                envoyeur != ".$_SESSION['id']." and
+                receveur != ".$receveur." 
+                )
+                order by created_at desc 
+                ");
+        $req->execute();
+
+        return $req;
+
+    }
+
 
 }
