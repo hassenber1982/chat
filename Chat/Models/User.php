@@ -79,7 +79,7 @@ class User extends \Core\Model
      */
     public function setPassword($password)
     {
-        $this->password = password_hash($password,PASSWORD_BCRYPT, ['cost' => 12]);
+        $this->password = md5($password);
     }
 
     /**
@@ -129,22 +129,19 @@ class User extends \Core\Model
         return $req->rowCount();
     }
 
-    public function login($user, $psd) : bool
+    public function login($user, $psd) : int
     {
-
-        $psd = password_hash($psd,PASSWORD_BCRYPT, ['cost' => 12]);
-
         $req = static::getInstance()
             ->query("select * from user 
-                where user='".$user."' and password='".$psd."'"
-        );
-        if ($req->rowCount()>0) {
+                where user='".$user."'");
+        $q = $req->fetch();
+        if ($req->rowCount()>0 && md5($psd)== $q['password']) {
             $this->setIsConnect(1);
-            $_SESSION['user'] = $req->fetch()[0]['user'];
-            $_SESSION['id'] = $req->fetch()[0]['id'];
+            $_SESSION['user'] = $q['user'];
+            $_SESSION['id'] = $q['id'];
             return $_SESSION['id'];
         } else
-            return $req->rowCount();
+            return 0;
 
     }
 

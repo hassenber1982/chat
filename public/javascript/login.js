@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $(".btn-success").on('click', function(){
+        $('#login_chat').submit();
+    });
     $('#add_more').on('click', function(){
         var colorR = Math.floor((Math.random() * 256));
         var colorG = Math.floor((Math.random() * 256));
