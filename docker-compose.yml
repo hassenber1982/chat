@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+  #NGINX
+  drupal:
+    container_name: chat_server
+    image: chat
+    build: Docker
+    expose:
+      - "80"
+    ports:
+      - "8080:80"
+    stdin_open: true
+    tty: true
+    command: '/start.sh'
+    working_dir: "/usr/share/nginx/html"
+
