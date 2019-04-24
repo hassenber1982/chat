@@ -60,4 +60,28 @@ class Chat extends \Core\Controller
 
     }
 
+
+    /**
+     * @throws \Exception
+     */
+    public function submitAction() : void
+    {
+        $message = '';
+        /** @var User $user */
+        if (isset($_POST['receveur']) && isset($_POST['message'])) {
+
+            $chat = new \Chat\Models\Chat();
+            $chat->setReceveur($_POST['receveur']);
+            $chat->setMessage($_POST['message']);
+            if ($chat->push())
+                $message .= 'chat create';
+            else
+                $message .= 'chat errone';
+        }
+        View::render('Home/connexion.php', [
+            'result' => $message
+        ]);
+
+    }
+
 }

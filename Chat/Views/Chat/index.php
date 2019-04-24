@@ -37,11 +37,13 @@
                 <div class="card-body msg_card_body">
                 </div>
                 <div class="card-footer">
+                    <form id="chat" method="post" action="/chat/submit">
                     <div class="input-group">
                         <div class="input-group-append">
                             <span class="input-group-text attach_btn"></span>
                         </div>
-                        <textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
+                        <textarea name="message" id="message" class="form-control type_msg" placeholder="Type your message..."></textarea>
+                        <input type="hidden" name="receveur" id="receveur" class="form-control"/>
                         <div class="input-group-append">
                             <span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
                         </div>
